@@ -1,0 +1,245 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------------------BRAND COLORS--------------------------------*/
+/* 
+#8d9586 - gray
+#27668c - blue
+#565902 - medium green
+#bfb630 - light green
+#403c01 - dark green 
+*/
+
+/*----------------------------GLOBAL STYLES-------------------------------*/
+*{
+  box-sizing: border-box;
+  font-size: 1em;
+  line-height: 1.35;
+  font-family: 'Actor', sans-serif;
+  color: #222;
+}
+
+header, footer{
+  background-color: #403c01;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Candal', sans-serif;
+  text-align: center;
+}
+
+h1{
+  color: white;
+  font-size: 1.5em;
+  padding: 0.75em 0;
+}
+
+h2{
+  font-size: 1.25em;
+  padding: 0.6em 0;
+}
+
+h3{
+  font-size: 1.1em;
+}
+
+.hidden{
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+nav ul{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+a{
+  color: #222;
+  font-family: 'Actor', sans-serif;
+}
+
+nav a{
+  font-family: 'Candal', sans-serif;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 1.5em 1em;
+  text-align: center;
+}
+
+.active{
+  text-decoration: underline #bfb630;
+  text-decoration-thickness: 3px;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+#homeMain p{
+  padding: 1em;
+}
+
+#aboutPlants{
+  background-color: #27668c;
+}
+
+#contactUs{
+  background-color: #565902;
+}
+
+#aboutPlants p, #aboutPlants h3, #contactUs p, #contactUs h3{
+  color: white;
+  padding: 1em;
+}
+
+footer section:first-of-type{
+  max-width: 90%;
+  margin: 1em auto 0 auto;
+}
+
+footer h2:first-of-type{
+  padding-top: 1em;
+}
+
+footer h2, footer a, footer span{
+  color: white;
+  display: block;
+}
+
+footer address{
+  font-family: 'Actor', sans-serif;
+  color: white;
+}
+
+
+#socialMedia{
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+#socialMedia h2{
+  grid-column: 1/4;
+  margin: 1em 0 0 0;
+}
+
+#socialMedia img{
+  width: 50px;
+  margin: 0 auto;
+  padding: 0.25em;
+}
+
+
+/*----------------------------MOBILE STYLES-------------------------------*/
+header img{
+  width: 90px;
+  margin: 0 auto;
+}
+
+#hero{
+  width: 100%;
+  margin: 1em 0;
+}
+
+#homeMain span{
+  display: block;
+}
+
+#aboutPlants{
+  margin-bottom: 1em;
+}
+
+#aboutPlants img, #contactUs img{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.mobile{
+  display: block;
+  margin: 0.35em 0;
+}
+
+.desktop{
+ display: none; 
+}
+
+
+/*----------------------------TABLET STYLES-------------------------------*/
+@media screen and (min-width: 600px){
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+
+/*----------------------------DESKTOP STYLES------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
